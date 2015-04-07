@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}
+	Cosmetico
+{% endblock %}
+
+{% block content %}
+	<h1>{{ cosmetico.nombre }}</h1>
+	<br>
+	<p>{{ cosmetico.descripcion }}</p>
+	<img src="/media/{{ cosmetico.imagen }}" width = "80px" heigth = "80px">
+
+	<br>
+	<a href="/cosmeticos/page/1">Mostrar la lista de cosmeticos</a>
+
+{% endblock %}
